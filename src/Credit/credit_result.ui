@@ -79,7 +79,7 @@ font-size:20px;
 }</string>
       </property>
       <property name="text">
-       <string>Total payment</string>
+       <string>Monthly payment</string>
       </property>
      </widget>
     </item>
@@ -103,7 +103,7 @@ font-size:20px;
 }</string>
       </property>
       <property name="text">
-       <string>Montly payment</string>
+       <string>Total payment</string>
       </property>
      </widget>
     </item>
