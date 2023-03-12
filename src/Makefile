@@ -27,12 +27,4 @@ calc:
 	./calc.app/Contents/MacOS/calc
 dist:
 	tar -czf src.tgz *
-dvi: manual.html
-manual.html: manual.textinfo
-	makeinfo --html manual.textinfo
-style_check: clean
-	cp ../materials/linters/CPPLINT.cfg ./
-	python3 ../materials/linters/cpplint.py --extensions=cpp interface* Model_and_Controller/* Credit/* test_calc.cpp
-	cppcheck --enable=all --suppress=missingIncludeSystem test_calc.cpp
-	rm CPPLINT.cfg
 
